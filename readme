@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .design {
+        font-size: 30px;
+       background-color: rgba(247, 166, 180, 0.908);
+       height: 100vh;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    } 
+    button {
+    display: block;
+    margin: 20px auto;   /* center */
+    padding: 10px 30px;  /* size बड़ा */
+    font-size: 18px;     /* text बड़ा */
+    background-color: rgb(106, 46, 46);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+    </style>
+
+</head>
+<body>
+    <div class = "design" >
+    <form>
+        <label for="name">Enter Username</label>
+        <input type="text" id="name">
+        <br>
+        <br>
+        <label for="password">Enter Password</label>
+        <input type="text" id="password">
+        <br>
+        <button type="button">Login</button>
+    </form>
+</div>
+
+<script>
+    function login (username,password){
+  if(username=="userkaname"&& password == "1234"){
+    return "loginsuccesfull"
+  }
+  else {
+    return "loginfailed"
+  }
+}
+
+</script>
+    <!-- <script src="index.js"></script>  -->
+</body>
+</html>
